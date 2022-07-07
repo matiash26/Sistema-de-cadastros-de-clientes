@@ -24,6 +24,6 @@
 ![Pagina-Historico](https://raw.githubusercontent.com/matiash26/Sistema-de-cadastros-de-clientes/main/fotos%20do%20sistema/historico.png)
 
 ## Pagina de Edição:
-  - Editar sistema do site.
+  - Editar registro do sistema.
   
 ![Pagina-Edicao](https://raw.githubusercontent.com/matiash26/Sistema-de-cadastros-de-clientes/main/fotos%20do%20sistema/Editar.png)
