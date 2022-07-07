@@ -49,10 +49,6 @@ class HistoricoDB extends Connect{
         $Sqli->bindParam(':i', $historicoID);
         return $Sqli->execute();
     }
-    // public function selecCompras(){
-    //     $Sqli = $this->connection->query("SELECT count(idcliente), sum(valor) from historico group by idcliente");
-    //     return $Sqli->fetchAll(PDO::FETCH_OBJ);
-    // }
     
     //METODOS ESPECIAIS
     public function setH_ID($id)
