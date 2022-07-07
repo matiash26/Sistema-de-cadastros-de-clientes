@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+:root{
+    --colorbody: #fff2ef;
+    --color01: #ffff;
+    --color02: #f8e2e1;
+    --color03: #F2E5E4;
+    --color04: #694543;
+    --color05: #f5f6fb;
+    --colorHover: #F5A9BB;
+    
+    --colorMsgErro: #d86d74;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: var(--colorbody);
+}
+#main-content{
+    margin: auto;
+    max-width: 1280px;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: var(--color02);
+    width: 320px;
+    height: 450px;
+    box-shadow: 1px 1px 10px rgba(32, 32, 32, 0.26);
+}
+main form h1{
+    height: 75px;
+    color: var(--color04);
+    font-weight: bold;
+}
+#input_div{
+    margin-bottom: 20px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    background: var(--color01);
+    padding-left: 5px;
+}
+#input_div{
+    color: var(--color04);
+}
+form div label{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color04);
+    display: block;
+}
+div #field_input{
+    height: 30px;
+    border:none;
+    border-radius: 0;
+    padding-left: 5px;
+    width: 100%;
+}
+div input#button_login{
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background: var(--color01);
+    color: var(--color04);
+}
+div input#button_login:hover{
+    background: var(--colorHover);
+}
+div #login{
+    margin-top: 10%;
+}
+.msg-alert{
+    background: var(--colorMsgErro);
+    width: 90%;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+    margin-bottom: 20px;
+}

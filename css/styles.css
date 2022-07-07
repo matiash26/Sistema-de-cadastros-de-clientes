@@ -1,0 +1,379 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
+    --colorbody: #fff2ef;
+    --color01: #ffff;
+    --color02: #694543;
+    --color03: #f5f6fb; 
+    --colorlayout: #f8e2e1;
+    --colorHover: #F865B0;
+    --coloredit: #1887fdc2;
+    --coloredithover: #459dfcb0;
+    --colorsave: #2CDA9D;
+    --colordelete: #f7684b;
+    --colordeletehover: #f7ad4b;
+}
+body{
+    background: var(--colorbody);
+}
+div#container {
+    margin: auto;
+    max-width: 1280px;
+    height: 100%;
+    display: flex;
+}
+
+aside {
+    width: 250px;
+    min-height: 100vh;
+    background: var(--colorlayout);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    color: var(--color02);
+    position: fixed;
+}
+
+aside div#logotipo {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--colorlayout);
+}
+
+aside div#logotipo img {
+    width: 100px;
+}
+aside li{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+aside li#buttonSide {
+    height: 40px;
+    width: 180px;
+    justify-content: space-around;
+    background: var(--color01);
+    color: var(--color02);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+aside li#buttonSide:hover{
+    background: var(--colorHover);
+    color: var(--color01);
+}
+aside li#linkSide{
+    margin-left: 20px;
+    color: var(--color02);
+}
+
+aside li#linkSide a{
+    color: var(--color02);
+}
+aside li#linkSide a:hover{
+    color: var(--colorHover);
+}
+aside li#linkSide span{
+    margin-right: 10px;
+
+}
+
+/*TOPO DO SITE*/
+
+header {
+    height: 10vh;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--colorlayout);
+}
+
+header form {
+    display: flex;
+    width: 450px;
+    height: 30px;
+}
+
+header form div#buscar {
+    display: flex;
+    align-items: center;
+}
+
+header form div#buscar input {
+    width: 420px;
+    height: 35px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+}
+
+#buscar span {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    background: var(--color01);
+    color: var(--color02);
+}
+
+header div#userlogin{
+    display: flex;
+    color: var(--color02);
+}
+header div#userlogin span.logout{
+    margin-left: 10px;
+    color: rgba(255, 0, 0, 0.692);
+}
+
+/*CONTEUDO DO SITE*/
+
+main {
+    width: 100%;
+    margin-left: 250px;
+}
+#listagem{
+    background-color: var(--color01);
+    max-width: 1000px;
+    box-shadow: 1px 1px 10px rgba(32, 32, 32, 0.26);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
+#listagem table{
+    width: 100%;
+    border-collapse: collapse;
+}
+#listagem table tr#border-column{
+    height: 0px;
+    font-weight: bolder;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+}
+table tr{
+    height: 50px;
+}
+table tr td{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+table#table_listagem tr:nth-child(even){
+    background: #f2f2f2;
+}
+table#table_listagem tr td:nth-child(2){
+    width: 123px;
+}
+table#table_listagem tr td:nth-child(3){
+    width: 102px;
+}
+table#table_listagem tr td:nth-child(4){
+    width: 20%;
+}
+table#table_listagem tr td:nth-child(5){
+    width: 25px;
+}
+table#table_listagem tr td:nth-child(6){
+    width: 40px;
+}
+table#table_listagem tr td:nth-child(7){
+    width: 40px;
+}
+table#table_listagem tr td:nth-child(8){
+    width: 10px;
+}
+#icon_edit{
+    padding: 3px;
+    background: var(--coloredit);
+    border-radius: 5px;
+    color: white
+}
+
+/* PAGINA DE USER INFO*/
+ 
+#formulario{
+    height: 90vh;  /* 90vh pois o header já está ocupando 10vh*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#formulario form#formulario{
+    max-height: 614px;
+    width: 650px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(32, 32, 32, 0.26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--colorlayout);
+    color: var(--color02);
+}
+form#formulario h2, #formpopup h2{
+    margin-bottom: 30px;
+
+}
+form#formulario div, #formpopup div{
+    margin-bottom: 25px;
+}
+form#formulario div .fields, #formpopup div .fields{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+form#formulario div #select, #formpopup div #select{
+    text-align: center;
+    outline: auto;
+}
+
+form#formulario div#qtd-data, #formpopup div#qtd-data{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+div#qtd-data div{
+    height: 40px;
+    text-align: center;
+    width: 48%;
+    border-radius: 5px;
+}
+form#formulario div .labels, #formpopup div .labels{
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+#qtd, #data{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+}
+div#user_button{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 215px;
+}
+div#user_button input{
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+div#user_button #editar_btn{
+    background: var(--coloredit);
+    color: var(--color01);
+}
+div#user_button #editar_btn:hover{
+    background: var(--coloredithover);
+}
+div#user_button #delete_btn{
+    background: #f7684b;
+    color: var(--color01);
+}
+div#user_button #delete_btn:hover{
+    background: var(--colordeletehover);
+}
+/*POP UP ADD*/
+
+.popup{
+    height: 550px;
+    width: 650px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(32, 32, 32, 0.26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--colorlayout);
+    color: var(--color02)
+}
+#popaUp_add{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.514);
+    z-index: 999;
+    position: fixed;
+    display: none;
+}
+#popaUp_addP{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.514);
+    z-index: 999;
+    position: fixed;
+    display: none;
+}
+#pop_up_exit{
+    color: var(--color02);
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+    left: 300px;
+    cursor: pointer;
+}
+#pop_up_exitP{
+    color: var(--color02);
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+    left: 300px;
+    bottom: 90px;
+    cursor: pointer;
+}
+#adicionar{
+    height: 40px;
+    width: 115px;
+    border-radius: 5px;
+    background: #2CDA9D;
+    border: none;
+    font-weight: bolder;
+    color:white;
+    cursor: pointer;
+}
+#adicionar:hover{
+    background: #29CF95;
+}
+
+/* POP UP DE PRODUTO*/
+div input[type=number]#preco{
+    text-align: center;
+    width: 150px;
+}
+
+/*PAGE CLIENTES*/
+div#clientes{
+    box-sizing: border-box;
+
+    width: 1000px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(32, 32, 32, 0.26);
+    margin: auto;
+    color: var(--color02);
+}
+
+/* tabelas de cliente e produto*/
+.table-side tr td{
+    width: 50%;
+
+}
