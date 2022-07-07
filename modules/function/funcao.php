@@ -9,8 +9,9 @@ if ($_SESSION["cargo"] == 2) {
     $nome = addslashes($_POST["nome"] ?? "");
     $telefone = addslashes($_POST["telefone"] ?? "");
     $data = addslashes($_POST["data"] ?? "");
-    $historicoID = addslashes($_POST["historicoid"]);
     $clienteID = addslashes($_POST["idcliente"]?? "");
+    $historicoID = addslashes($_POST["historicoid"]);
+    $preco = addslashes($_POST["preco"]);
     $produtos = addslashes($_POST["produtos"] ?? "");
     $qtd = addslashes($_POST["quantidade"] ?? "");
     $status = addslashes($_POST["status"] ?? "");
@@ -22,7 +23,6 @@ if ($_SESSION["cargo"] == 2) {
     $produto = new ProdutoDB();
     switch ($btn) {
         case "Adicionar Cliente";
-            $preco = addslashes($_POST["preco"]);
             if ($cliente->Insert($nome, $telefone)) {
                 $idCliente = $cliente->lastID();
             } else {

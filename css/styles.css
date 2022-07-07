@@ -175,7 +175,7 @@ table#table_listagem tr:nth-child(even){
     background: #f2f2f2;
 }
 table#table_listagem tr td:nth-child(2){
-    width: 123px;
+    width: 127px;
 }
 table#table_listagem tr td:nth-child(3){
     width: 102px;
