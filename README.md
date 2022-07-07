@@ -1,5 +1,5 @@
 # Sistema de cadastros de clientes
-  Criei esse sistema para a microempresa da minha familia e conseguie registrar os clientes.
+  Criei esse sistema para a microempresa da minha familia e conseguir registrar os clientes.
 ### Tecnologias utilizadas:
   - PHP-OO
   - HTML5 e CSS
